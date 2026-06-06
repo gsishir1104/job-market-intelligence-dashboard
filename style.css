@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  color: #38bdf8;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+#roleChart div {
+  background: #334155;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+#skillList div {
+  background: #334155;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#insights li {
+  margin-bottom: 12px;
+  color: #cbd5e1;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}

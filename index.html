@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Market Intelligence Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Job Market Intelligence Dashboard</h1>
+      <p>
+        Analyze job market trends, in-demand skills, role demand, and career insights
+        for entry-level technology roles.
+      </p>
+    </section>
+    <section class="hero">
+  <h1>Job Market Intelligence Dashboard</h1>
+  <p>
+    Analyze job market trends, in-demand skills, role demand, and career insights
+    for entry-level technology roles.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Select Career Role</h2>
+
+  <button onclick="showRole('Data Analyst')">
+    Data Analyst
+  </button>
+
+  <button onclick="showRole('Software Developer')">
+    Software Developer
+  </button>
+
+  <button onclick="showRole('AI Engineer')">
+    AI Engineer
+  </button>
+
+  <button onclick="showRole('Web Developer')">
+    Web Developer
+  </button>
+
+  <button onclick="showRole('Game Developer')">
+    Game Developer
+  </button>
+</section>
+
+<section class="stats-grid">
+
+    <section class="stats-grid">
+      <div class="stat-card">
+        <h2 id="totalJobs">0</h2>
+        <p>Total Jobs Analyzed</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="topSkill">-</h2>
+        <p>Top Skill</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="topRole">-</h2>
+        <p>Most Demanded Role</p>
+      </div>
+
+      <div class="stat-card">
+        <h2 id="avgSalary">$0</h2>
+        <p>Average Salary</p>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+        <h2>Role Demand</h2>
+        <div id="roleChart"></div>
+      </div>
+
+      <div class="card">
+        <h2>Top Skills</h2>
+        <div id="skillList"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Career Insights</h2>
+      <ul id="insights"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
