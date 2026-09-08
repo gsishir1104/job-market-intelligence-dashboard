@@ -1,167 +1,59 @@
-# job-market-intelligence-dashboard
-
 # Job Market Intelligence Dashboard
 
-## Live Demo
-
-Add your Vercel URL here after deployment.
-
-Example:
-
-https://your-dashboard.vercel.app
-
----
-
-## Project Overview
-
-Job Market Intelligence Dashboard is an interactive analytics platform that helps users explore job market trends, in-demand skills, salary insights, and career opportunities across technology roles.
-
-The dashboard allows users to select different career paths and view role-specific information such as average salaries, top skills, and market insights.
-
----
+An interactive frontend demo that summarizes a small, embedded job dataset and displays career-role examples. Built with HTML, CSS, and plain JavaScript, it demonstrates aggregation, frequency counting, and dashboard updates without a backend.
 
 ## Features
 
-* Interactive Career Role Selection
-* Average Salary Insights
-* Top Skills Analysis
-* Job Demand Overview
-* Career Intelligence Dashboard
-* Dynamic Role-Based Recommendations
-* Responsive Design
+- Summary cards for job count, average salary, most frequent role, and most frequent skill.
+- Role counts and skill-mention counts generated from six sample records.
+- Buttons for Data Analyst, Software Developer, AI Engineer, Web Developer, and Game Developer.
+- Role-specific salary, skill, and insight text.
+- CSS Grid layouts with a mobile breakpoint.
 
----
+## Data and behavior
 
-## Career Roles Included
+All data is hardcoded in [script.js](script.js). The initial dashboard aggregates the `jobs` array; its six entries produce an average salary of $75,833 after rounding.
 
-* Data Analyst
-* Software Developer
-* AI Engineer
-* Web Developer
-* Game Developer
+Selecting a role reads a separate `roleData` lookup and replaces the displayed role, salary, top skill, skill list, and insight. It does not filter the original dataset: the total job count and role-demand list remain unchanged. The sample dataset uses "AI Associate," while the role selector has a separate "AI Engineer" example.
 
----
+Salary values, demand labels, and career insights are illustrative content with no cited market dataset. They should not be interpreted as current market statistics. There is no live job API, scraping pipeline, forecasting model, or Python analytics backend.
 
-## Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript
-* GitHub
-* GitHub Codespaces
-* Vercel
-
----
-
-## Project Structure
-
-```text
-job-market-intelligence-dashboard
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
----
-
-## Run Project Locally
-
-Open terminal and run:
+## Run locally
 
 ```bash
-python3 -m http.server 8000
+git clone https://github.com/gsishir1104/job-market-intelligence-dashboard.git
+cd job-market-intelligence-dashboard
 ```
 
----
+Open `index.html` in a modern browser. No package installation or build step is needed.
 
-## View in Browser
-
-### Step 1
-
-Open Codespaces
-
-### Step 2
-
-Open Terminal
-
-### Step 3
-
-Run:
+For an optional local server, with Python 3 installed:
 
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
-### Step 4
+Then open [localhost:8000](http://localhost:8000). Python serves the files only.
 
-Open:
+## Explore the demo
 
-```text
-PORTS
-```
+1. Review the initial six-record summary.
+2. Select a career role to see its predefined details.
+3. Compare the role and skill lists with the data in `script.js`.
+4. Resize the browser to inspect the mobile layout.
 
-### Step 5
+## Source guide
 
-Open:
+| File | Responsibility |
+| --- | --- |
+| [index.html](index.html) | Role controls, summary cards, and dashboard sections |
+| [script.js](script.js) | Sample data, aggregations, and role-selection behavior |
+| [style.css](style.css) | Cards, grids, and responsive styles |
 
-```text
-Port 8000
-```
+## Engineering focus
 
-### Step 6
-
-Click:
-
-```text
-Open in Browser
-```
-
----
-
-## Git Commands
-
-```bash
-git add .
-git commit -m "update dashboard"
-git push origin main
-```
-
----
-
-## Future Improvements
-
-* Real Job API Integration
-* Interactive Charts
-* Salary Comparison Tool
-* Skill Gap Analysis
-* Country-Based Analytics
-* AI Career Recommendations
-* Job Trend Forecasting
-
----
-
-## Skills Demonstrated
-
-* Frontend Development
-* JavaScript Programming
-* Data Analysis Concepts
-* Dashboard Design
-* User Interface Design
-* Problem Solving
-* Data Visualization
-
----
+This project demonstrates JavaScript array operations, object-based frequency counting, DOM rendering, and responsive dashboard presentation. Live data integration and analytical validation would be separate future work.
 
 ## Author
 
-Sishir Gottumukkala
-
-Computer Science Graduate
-
-LinkedIn:
-https://linkedin.com/in/sishir-gottumukkala-9a7a43235
-
-GitHub:
-https://github.com/gsishir1104
+[Sishir Gottumukkala](https://github.com/gsishir1104) · [LinkedIn](https://linkedin.com/in/sishir-gottumukkala-9a7a43235)
