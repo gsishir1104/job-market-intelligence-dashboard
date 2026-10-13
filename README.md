@@ -1,14 +1,8 @@
-# job-market-intelligence-dashboard
-
 # Job Market Intelligence Dashboard
 
 ## Live Demo
 
-Add your Vercel URL here after deployment.
-
-Example:
-
-https://your-dashboard.vercel.app
+**[Open the live dashboard](https://gsishir1104.github.io/job-market-intelligence-dashboard/)**
 
 ---
 
@@ -49,7 +43,7 @@ The dashboard allows users to select different career paths and view role-specif
 * JavaScript
 * GitHub
 * GitHub Codespaces
-* Vercel
+* GitHub Pages
 
 ---
 
